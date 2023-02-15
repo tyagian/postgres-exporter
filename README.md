@@ -1,6 +1,3 @@
-# postgres-exporter
-postgres-exporter
-
 
 # Postgres exporter
 
