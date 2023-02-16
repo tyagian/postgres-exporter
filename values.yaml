@@ -4,7 +4,7 @@
 replicaCount: 1
 
 image:
-  repository: quay.io/prometheuscommunity/postgres-exporter #docker-repo.ehealthinsurance.com/obse/postgres-exporter
+  repository: quay.io/prometheuscommunity/postgres-exporter 
   tag: v0.10.1 #0.0.1 
   pullPolicy: IfNotPresent
 
