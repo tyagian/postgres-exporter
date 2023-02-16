@@ -102,7 +102,7 @@ securityContext: {}
 config:
   datasource: {}
     # Specify one of both datasource or datasourceSecret
-    #host: "aws-aurora-postgresql11-qa.cluster-crbt0lofm6sv.us-west-2.rds.amazonaws.com"
+    #host: " "
     #user: """
     # Only one of password, passwordSecret and pgpassfile can be specified
     #password: ""
