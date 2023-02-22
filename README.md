@@ -9,7 +9,7 @@
 2. Check if secret is created before deploying postgres exporter. Use this to create secret with multiple database. If secret is not available, create secret with this command: 
 
 ```
-kubectl create secret generic postgres-exporter --from-literal=DATA_SOURCE_NAME='postgresql://<user>:<pass>@aws-aurora-postgresql11-qa.cluster-crbt0lofm6sv.us-west-2.rds.amazonaws.com:5432/qa?sslmode=require,postgresql://<user>:<pass>@aws-aurora-postgresql11-dev.cluster-crbt0lofm6sv.us-west-2.rds.amazonaws.com:5432/dev?sslmode=require,postgresql://<user>:<pass>@aws-aurora-postgresql11-cm.cluster-crbt0lofm6sv.us-west-2.rds.amazonaws.com:5432/cm?sslmode=require,postgresql://<user>:<pass>@pg-plan-network-qa.cluster-crbt0lofm6sv.us-west-2.rds.amazonaws.com:5432/qa?sslmode=require,postgresql://<user>:<pass>@pg-plan-network-cm.cluster-crbt0lofm6sv.us-west-2.rds.amazonaws.com:5432/cm?sslmode=require' -n prometheus
+kubectl create secret generic postgres-exporter --from-literal=DATA_SOURCE_NAME='postgresql://<user>:<pass>@aws-aurora.cluster-crb.us-west-2.rds.amazonaws.com:5432/qa?sslmode=require,postgresql://<user>:<pass>@aws-aurora-postgresql11-dev.cluster-crbt0lofm6sv.us-west-2.rds.amazonaws.com:5432/dev?sslmode=require,postgresql://<user>:<pass>@aws-aurora-postgresql11-cm.cluster-crbt0lofm6sv.us-west-2.rds.amazonaws.com:5432/cm?sslmode=require,postgresql://<user>:<pass>@pg-plan-network-qa.cluster-crbt0lofm6sv.us-west-2.rds.amazonaws.com:5432/qa?sslmode=require,postgresql://<user>:<pass>@pg-plan-network-cm.cluster-crbt0lofm6sv.us-west-2.rds.amazonaws.com:5432/cm?sslmode=require' -n prometheus
 ```
 
 3. Deploy postgres exporter using helm file
